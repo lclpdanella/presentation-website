@@ -66,3 +66,28 @@ body {
     background: #fff;
     color: #333;
 }
+
+/* Page Animation */
+#page-1 h1{
+    transform: translateY(-1200px);
+    animation: heading var(--animtate-speed) forwards ease-in;
+}
+
+#page-1 p{
+    transform: translateX(-1800px);
+    animation: paragraph var(--animtate-speed) forwards ease-in;
+}
+
+
+/* Keyframes */
+@keyframes heading{
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes paragraph{
+    to {
+        transform: translateX(0);
+    }
+}
